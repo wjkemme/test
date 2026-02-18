@@ -1,6 +1,10 @@
-#include <iostream>
+#include <QApplication>
+#include "calculator.h"
 
-int main() {
-    std::cout << "Hallo vanuit mijn C++ project in WSL!" << std::endl;
-    return 0;
+int main(int argc, char **argv)
+{
+    QApplication app(argc, argv);
+    Calculator w;
+    w.show();
+    return app.exec();
 }
